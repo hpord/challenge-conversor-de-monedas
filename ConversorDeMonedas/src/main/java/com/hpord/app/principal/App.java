@@ -1,4 +1,4 @@
-package com.hpord;
+package com.hpord.app.principal;
 
 /**
  * Hello world!
