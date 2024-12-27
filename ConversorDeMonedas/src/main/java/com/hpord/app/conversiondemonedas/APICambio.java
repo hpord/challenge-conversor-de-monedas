@@ -20,8 +20,8 @@ public class APICambio {
         simbolos.setDecimalSeparator('.');
         DecimalFormat formateador = new DecimalFormat("#.##",simbolos);
 
-        String direccion = String.format("https://v6.exchangerate-api.com/v6/%s/pair/%s/%s/%s", apikey, origen, destino, formateador.format(monto));
-        System.out.println("-----> Dirección" + direccion);//
+        String direccion = String.format("https://v6.exchangerate-api.com/v6/%s/pair/%s/%s/%s", 
+        apikey, origen, destino, formateador.format(monto));
         HttpClient client = HttpClient.newHttpClient();
                 HttpRequest request = HttpRequest.newBuilder()
                         .uri(URI.create(direccion))

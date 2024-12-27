@@ -124,12 +124,11 @@ public  class UI {
 
     public int mostrarMontoConvertido() {
         if (montoConvertido < 0) {
-            System.out.println("-----> MONTO " + monedaOrigen.getCodigo() + " " + monedaDestino.getCodigo());//
             System.out.println("No se pudo acceder a la base de datos");
             return 0;
         }
-        System.out.println(String.format("%f.2 %s son equivalentes a %.2f %s", montoOriginal, monedaOrigen.getNombre().toLowerCase(),
-        montoConvertido, monedaDestino.getNombre().toLowerCase()));
+        System.out.println(String.format("%.2f %s SON EQUIVALENTES A %.2f %s\n", montoOriginal, monedaOrigen.getNombre().toUpperCase(),
+        montoConvertido, monedaDestino.getNombre().toUpperCase()));
         return 1;
     }
 }
